@@ -1,13 +1,13 @@
 import { Stack } from 'expo-router'
 import React from 'react'
 
-export const _layout = () => {
+const _layout = () => {
   return (
-    <Stack>
-      <Stack.Screen name='index' />
-      <Stack.Screen name='otp' />
+    <Stack screenOptions={{headerShown:'false'}}>
+      <Stack.Screen name='otp' options={{headerShown:'false'}}/>
+      <Stack.Screen name='index' options={{headerShown:'true', headerTitle:'Login', headerBackVisible:false}} />
     </Stack>
-        
-    
   )
 }
+
+export default _layout;

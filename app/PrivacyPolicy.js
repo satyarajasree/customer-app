@@ -4,7 +4,6 @@ import { View, Text, ScrollView, StyleSheet } from 'react-native';
 const PrivacyPolicy = () => {
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.title}>Privacy Policy</Text>
 
       <Text style={styles.sectionTitle}>Introduction</Text>
       <Text style={styles.text}>
